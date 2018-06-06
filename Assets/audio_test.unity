@@ -414,7 +414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eac9395efdfd4470af0d0607aef1b8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostname: localhost:3891
+  hostname: 172.22.2.30:3891
   preset: 0
 --- !u!23 &1656935892
 MeshRenderer:
@@ -468,7 +468,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1656935889}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &1656935895
 Transform:
   m_ObjectHideFlags: 0
