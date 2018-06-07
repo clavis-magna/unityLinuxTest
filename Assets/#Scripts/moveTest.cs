@@ -18,10 +18,15 @@ public class moveTest : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         Vector3 trackerPos =  hostSettings.GetPosition(trackerAddress, trackerChannel);
+        print(trackerPos);
         //Vector3 newVec = magicCube.position;
-       // newVec = Vector3.Normalize(newVec);
+        // newVec = Vector3.Normalize(newVec);
         //otherCube.position = trackerPos + gameObject.transform.position;
-        
+
         //print(newVec);
-        transform.Translate(trackerPos * Time.deltaTime  * 0.5f);    }
+        if (trackerPos.x > 1 || trackerPos.z > 1 || trackerPos.x < -1 || trackerPos.z < -1)
+        {
+            transform.Translate(trackerPos * Time.deltaTime * 0.5f);
+        }
+    }
 }
