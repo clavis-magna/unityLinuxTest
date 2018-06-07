@@ -28,7 +28,7 @@ public class moveTest : MonoBehaviour {
 
 
         //print(newVec);
-        if (trackerPosFixed.x > 1 || trackerPosFixed.z > 1 || trackerPosFixed.x < -1 || trackerPosFixed.z < -1)
+        if (trackerPosFixed.x > 0.4f || trackerPosFixed.z > 0.4f || trackerPosFixed.x < -0.4f || trackerPosFixed.z < -0.4f)
         {
             //transform.Translate(trackerPosFixed * Time.deltaTime * 0.5f);
             transform.position = Vector3.MoveTowards(transform.position, whereToHeadFixed, Time.deltaTime * 1.5f);

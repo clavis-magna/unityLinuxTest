@@ -12,7 +12,7 @@ public class distributePoints : MonoBehaviour {
         {
             for (int z = -100; z < 100; z = z + 2)
             {
-                Instantiate(aPoint, new Vector3(x, 1.5f, z), Quaternion.identity);
+                Instantiate(aPoint, new Vector3(x, Random.Range(0,20), z), Quaternion.identity);
             }
         }
 	}
