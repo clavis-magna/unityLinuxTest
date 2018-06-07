@@ -6,5 +6,5 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/#scenes/clock.unity
-    guid: 05a2a8b7319f1324b8309a79e717f305
+    path: Assets/#scenes/trackerTest.unity
+    guid: 115648933f791d64eae4b6b1f103810f
