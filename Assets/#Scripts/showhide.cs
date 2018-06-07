@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class trackerInDataArena : MonoBehaviour {
+public class showhide : MonoBehaviour {
 
-    public string trackerAddress;
-    public int trackerChannel;
+    public GameObject paralellBars;
 
 	// Use this for initialization
 	void Start () {
@@ -14,6 +13,6 @@ public class trackerInDataArena : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        //print(VRPN.vrpnTrackerQuat(trackerAddress, trackerChannel)); 
-    }
+		
+	}
 }
