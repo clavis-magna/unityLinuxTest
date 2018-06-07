@@ -6,5 +6,5 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/#scenes/singleBeamThroughCenter.unity
-    guid: cd0cc444656d0604c8e556eebd130ad8
+    path: Assets/#scenes/gridNoTracker.unity
+    guid: 233d4712d1b9fa54da0518b82c016c16
