@@ -19,14 +19,17 @@ public class moveTest : MonoBehaviour {
 	void Update () {
         Vector3 trackerPos =  hostSettings.GetPosition(trackerAddress, trackerChannel);
         print(trackerPos);
+        Vector3 trackerPosFixed = new Vector3(trackerPos.x, 1.5f, -trackerPos.z);
         //Vector3 newVec = magicCube.position;
         // newVec = Vector3.Normalize(newVec);
         //otherCube.position = trackerPos + gameObject.transform.position;
 
+
+
         //print(newVec);
-        if (trackerPos.x > 1 || trackerPos.z > 1 || trackerPos.x < -1 || trackerPos.z < -1)
+        if (trackerPosFixed.x > 1 || trackerPosFixed.z > 1 || trackerPosFixed.x < -1 || trackerPosFixed.z < -1)
         {
-            transform.Translate(trackerPos * Time.deltaTime * 0.5f);
+            transform.Translate(trackerPosFixed * Time.deltaTime * 0.5f);
         }
     }
 }
