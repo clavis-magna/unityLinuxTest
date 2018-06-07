@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class moveTest : MonoBehaviour {
 
-    public Transform magicCube;
-    public Transform otherCube;
+
+    public TrackerHostSettings hostSettings;
 
     public string trackerAddress;
     public int trackerChannel;
@@ -17,7 +17,7 @@ public class moveTest : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Vector3 trackerPos = VRPN.vrpnTrackerPos(trackerAddress, trackerChannel);
+        Vector3 trackerPos =  hostSettings.GetPosition(trackerAddress, trackerChannel);
         //Vector3 newVec = magicCube.position;
        // newVec = Vector3.Normalize(newVec);
         //otherCube.position = trackerPos + gameObject.transform.position;

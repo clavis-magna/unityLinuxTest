@@ -1334,8 +1334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d091ab1985411bb40be3ce6395908fe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  magicCube: {fileID: 0}
-  otherCube: {fileID: 0}
+  hostSettings: {fileID: 1656935891}
   trackerAddress: RigidBody1
   trackerChannel: 0
 --- !u!1 &1754507933
